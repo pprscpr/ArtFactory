@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ArtFactory</title>
+    <!-- google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
+    <!-- cdn Link ist fuer Bootstrap notwendig -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Scroll Script import, Script muss vor dem Body geladen werden -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  </head>
+  <body>
+    <!-- nav from bootstrap basic Template -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">ArtFactory</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-center">
+            <li><a href="./index.html#showcase">Home</a></li>
+            <li><a href="#einkaufsliste">Einkäufe</a></li>
+            <li><a href="./index.html#contact">Contact</a></li>
+            <li><a href="./galerie.html">Galerie</a></li>
+          </ul>
+           <ul class="nav navbar-nav navbar-right">
+            <li><a href="#info1">Mein Bereich</a></li>
+            <li><a href="#contact">Logout</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+<!-- Section mit Bild links und Text rechts -->
+    <section id="kaeufe">
+        <div class="container">
+          <div class="jumbotron">
+            <h1>Ihre Einkäufe</h1> 
+            <p>hier finden Sie Ihre bereits gekauften Kunstwerke</p> 
+          </div>
+        </div>
+    </section>
+
+    <section id="einkaufsliste">
+      <div class="container">
+         <table class="table table-condensed">
+              <thead>
+                <tr>
+                  <th>Kunstwerk</th>
+                  <th>Bezeichnung</th>
+                  <th>Kaufdatum</th>
+                  <th>Künstler</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><img src="./img/artist.jpg" class="img-responsive" alt="Kreativität" width="120" height="100"></td>
+                  <td>Kreativität in im Raum</td>
+                  <td>23.03.2020</td>
+                  <td>Max Musterkuenstler</td>
+                </tr>
+                <tr>
+                  <td><img src="./img/architecture.jpg" class="img-responsive" alt="Architektur" width="120" height="100"></td>
+                  <td>Der Blick durch die Architektur</td>
+                  <td>02.01.2020</td>
+                  <td>Max Musterkuenstler</td>
+                </tr>
+                <tr>
+                  <td><img src="./img/lefthandleaf.jpg" class="img-responsive" alt="Blatt in der hand" width="120" height="100"></td>
+                  <td>Grünes Blatt</td>
+                  <td>10.08.2019</td>
+                  <td>Maxi Künstlerin</td>
+                </tr>
+                <tr>
+                  <td><img src="./img/colors.jpg" class="img-responsive" alt="Kreativität" width="120" height="100"></td>
+                  <td>Kreativität in im Raum</td>
+                  <td>13.06.2018</td>
+                  <td>Lotte Gründaum</td>
+                </tr>
+            </table>
+      </div>
+    </section>
+
+
+
+    <section id="floskel">
+      <div class="container floskel-left">
+        <p>Wir hoffen, dass Ihnen Ihre Kunstwerke viel Freude bereiten. <br /> 
+        Wir laden Sie gerne in unsere Galerie zum Wein und Kunstgenuß ein. <br /> 
+      Wir freuen uns auf Sie.</p>
+      </div>
+    </section>
+
+
+
+    
+
+
+    <footer>
+      <p class="text-center">ArtFactory Copyright &copy; 2020</p>
+    </footer>
+
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.navbar', {
+          duration: 2000,
+          origin:'bottom'
+        });
+        sr.reveal('#kaeufe', {
+          duration: 2000,
+          origin:'top',
+          distance:'300px'
+        });
+        sr.reveal('#einkaufsliste', {
+          duration: 2000,
+          origin:'right',
+          distance:'300px'
+        });
+       
+        sr.reveal('.floskel-left', {
+          duration: 2000,
+          origin:'left'
+        });
+        sr.reveal('.info-left', {
+          duration: 2000,
+          origin:'left',
+          distance:'300px',
+          viewFactor: 0.2
+        });
+        sr.reveal('.info-right', {
+          duration: 2000,
+          origin:'right',
+          distance:'300px',
+          viewFactor: 0.2
+        });
+    </script>
+
+    <script>
+    $(function() {
+      // Smooth Scrolling Quelle Traversy Media Tutorial on Bootstrap
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,240 @@
+
+body{
+  margin-top:70px;
+  font-size:16px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family:Poppins;
+}
+
+p{
+  font-family:Roboto;
+}
+
+section{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.navbar-default{
+  background:#333;
+  border:0;
+  font-family:Poppins;
+}
+
+/*default werte aus bootstrap mit !important ueberschreiben*/
+.nav li a {
+   color:#fff !important;
+}
+
+.nav li a:hover {
+   color:#a00 !important;
+}
+
+
+
+.navbar-brand{
+  font-size:20px;
+  color:#fff !important;
+  font-weight:bold;
+}
+
+.nav {
+  color:#fff;
+}
+
+#showcase h1{
+  font-size:50px;
+  margin-bottom:20px;
+}
+
+#showcase img{
+  width:90%;
+  margin-top:90px;
+  margin-left:20px;
+}
+
+#showcase .showcase-right{
+  margin-top:90px;
+}
+
+#cite{
+  background:#f1f1f1;
+  padding: 50px 0 30px 0;
+  text-align:center;
+  margin-top:40px;
+}
+
+#cite p{
+  font-size:32px;
+  font-family: 'Josefin Sans';
+  color:#000;
+}
+
+#cite p.origin{
+  font-size:20px;
+  color:#666;
+}
+
+#floskel{
+  background:#f1f1f1;
+  padding: 50px 0 30px 0;
+  text-align:center;
+  margin-top:40px;
+}
+
+#floskel p{
+  font-size:32px;
+  font-family: 'Josefin Sans';
+  color:#000;
+}
+
+
+
+#info1 .info-right{
+  margin-top:90px;
+}
+
+#info1 img{
+  width:90%;
+  margin-top:90px;
+  margin-left:20px;
+}
+
+#info2{
+  margin:20px 0 60px 0;
+}
+
+#maincontainer{
+  padding-top: 40px;
+  padding-bottom: 40px ;
+}
+
+#contact{
+  background:url(../img/lefthandleaf.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding:40px;
+  color:#fff;
+  border-top:#333 7px solid;
+  border-bottom:#333 7px solid;
+}
+#einkaufsliste table{
+  margin-top:100px;
+}
+
+footer{
+  padding:30px;
+}
+
+#sortOpt{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#sortOpt a{
+  color:#fff !important;
+  text-decoration: none;
+}
+
+
+#sortOpt a:hover {
+   color:#a00 !important;
+}
+
+/*joshis changes*/
+/*LOGIN from + errormsg*/
+.form-popup {
+  display: none; 
+}
+#login_error{
+  color :red;
+}
+
+/*Boxes for gallery*/
+/*boxes*/
+.boxes {
+  grid-area: boxes;
+  display: grid;
+  align-items: stretch;
+  grid-gap:40px;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+}
+
+.box {
+  text-align: center;
+  padding: 1.5rem 2rem;
+  background: #f1f1f1;
+  box-shadow: 0 1px 5px rgba(104,104,104, 0.8);
+}
+
+.box p {
+  color: var(--primary);
+
+}
+.box h5{
+  color: #333;
+}
+
+.box img{
+  padding-bottom: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+#debug{
+  border :2px solid black;
+  border-radius: 25px;
+  padding: 2px;
+  background: rgb(218, 214, 214) ;
+  margin :1px;
+
+}
+.imgDscr{
+  border :2px solid black;
+  border-radius: 5px;
+  padding: 2px;
+  background: rgb(218, 214, 214) ;
+  
+}
+.imgDscr h5{
+  background: rgb(145, 144, 144);
+ 
+}
+.imgDscr p:nth-child(even){
+  background: rgb(241, 238, 238);
+  
+}
+
+#cookie {
+  position: fixed;
+  font-family: Arial, Verdana sans-serif;
+  font-size: larger;
+  border: 4px solid yellow;
+  padding: 2% 20% 2% 20%;
+  display:block;
+  background: black;
+  color:yellow;
+  text-align:center;
+  margin: 10% 20% 10% 20%;
+  z-index: 1;
+}
+#cookie h1{
+  font-size: xx-large;
+  color:yellowgreen;
+}
+#cookie button{
+  padding : 2% 10% 2% 10%;
+  margin: 10%;
+  font-size: larger;
+  border: 4px solid yellowgreen;
+  border-radius: 20px;
+  background: #666;
+  color:yellow;
+}
+#cookie button:hover{
+  background: #999;
+}
+
