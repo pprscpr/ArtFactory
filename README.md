@@ -20,3 +20,5 @@ The project was tested and works in a XAMPP.
 * copy the files into the ./htdocs folder
 
 * run it in your browser via localhost/--foldername--
+
+![GitHub Logo](https://raw.githubusercontent.com/pprscpr/ArtFactory/master/screensh.png)
